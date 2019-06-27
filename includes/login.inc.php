@@ -2,7 +2,7 @@
 if (isset($_POST['login'])) {
 require 'db.inc.php';
 $email = $_POST['Email'];
-$passwd = $_POST['pass'];
+$passwd = $_POST['Password'];
 if (empty($email) || empty($passwd)) {
   header("location: ../index.php?error=emptyfields");
   exit();

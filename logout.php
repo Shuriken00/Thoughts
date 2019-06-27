@@ -1,13 +1,9 @@
-<nav>
-		   <a href="index.php">
-		     <img src="img/logo.png" alt="logo">
-			 </a>
+<?php 
+session_start();
 
-<?php
 if (isset($_SESSION['username'])) {
-echo '<h1>Sign UP</h1>
-<form action="includes/signup.inc.php" method="POST">
-<button type="submit" name="signup">Signup</button>
+echo '<form action="includes/logout.inc.php" method="POST">
+<button type="submit" name="submit">Logout</button>
 </form>';
 }else {
     echo '<form action="includes/signup.inc.php" method="POST">
@@ -19,7 +15,3 @@ echo '<h1>Sign UP</h1>
     </form>';
 }
 ?>
-
- <?php
-require "footer.php";
- ?>

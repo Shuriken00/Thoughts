@@ -1,13 +1,9 @@
 <?php
 $servername= "127.0.0.1";
-$dbuser= "sampleuser";
-$dbpass= "samplepass";
-$dbname="sampledb";
+$dbuser= "thoughts";
+$dbpass= "123456789";
+$dbname="thoughtsdb";
 
-$servername= "your server";
-$dbuser= "database user";
-$dbpass= "database password";
-$dbname="database name";
 
 $conn = mysqli_connect($servername, $dbuser, $dbpass, $dbname);
 if (!$conn) 
