@@ -1,8 +1,8 @@
 <?php
-$servername= "127.0.0.1";
-$dbuser= "thoughts";
-$dbpass= "123456789";
-$dbname="thoughtsdb";
+$servername= "your server ip or address";
+$dbuser= "your database username";
+$dbpass= "your database password";
+$dbname="your database name";
 
 
 $conn = mysqli_connect($servername, $dbuser, $dbpass, $dbname);
